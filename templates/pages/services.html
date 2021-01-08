@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- banner -->
+<section class="inner-banner">
+	<div class="banner-layer">
+		<h1 class="text-center">Our Services</h1>
+	</div>
+</section>
+<!-- //banner -->
+
+
+<!-- management services -->
+<section class="services py-5">
+	<div class="container py-md-3">
+		<h3 class="heading mb-lg-5 mb-4">Management services</h3>
+		<div class="row service_grids">
+			<div class="col-lg-6 w3-agile-grid">
+				{% for service in services1 %}
+				<div class="grid agile-info">
+					<h4 class="mb-3">{{ service.title }}</h4>
+					<p>{{ service.description }}</p>
+					<a href="#" data-toggle="modal" data-target="#exampleModalCenter" role="button">Read More <span class="fas ml-1 fa-angle-double-right"></span> </a>
+				</div>
+				{% endfor %}
+			</div>
+
+			<div class="col-lg-6 w3-agile-grid">
+				{% for service in services2 %}
+				<div class="grid agile-info">
+					<h4 class="mb-3">{{ service.title }}</h4>
+					<p>{{ service.description }}</p>
+					<a href="#" data-toggle="modal" data-target="#exampleModalCenter" role="button">Read More <span class="fas ml-1 fa-angle-double-right"></span> </a>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //management services -->
+
+<!-- blog -->
+<section class="blog">
+	<div class="workd py-5">
+		<div class="container py-md-3">
+			<h3 class="heading mb-lg-5 mb-4">Our Blog</h3>
+			<div class="row blog-grids">
+				<div class="col-lg-6 w3-agile-grid">
+					<div class="row blog-grid1 mr-lg-1 agile-info">
+						<div class="col-lg-5 col-md-4 col-sm-5 pl-0">
+							<img src="images/t1.jpg" class="img-fluid" alt="">
+						</div>
+						<div class="col-lg-7 col-md-8 col-sm-7 blog-text">
+							<p class="mt-2">june 15 2018</p>
+							<h4>Capital Management</h4>
+							<p>Cras blandit nibh ut pretium amet in elementum. Duis bibendum convallis nun ca dictum. Quisquen ac ipsum porta, ultrices metus sit amet,
+							curs in nisl. Duis aliquet varius sem sit amet</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 mt-lg-0 mt-5 w3-agile-grid">
+					<div class="row blog-grid2 ml-lg-1 agile-info">
+						<div class="col-lg-5 col-md-4 col-sm-5  pl-0">
+							<img src="images/t2.jpg" class="img-fluid" alt="">
+						</div>
+						<div class="col-lg-7 col-md-8 col-sm-7 blog-text">
+							<p class="mt-2">june 15 2018</p>
+							<h4>Creative Solutions</h4>
+							<p>Cras blandit nibh ut pretium amet in elementum. Duis bibendum convallis nun ca dictum. Quisquen ac ipsum porta, ultrices metus sit amet,
+							curs in nisl. Duis aliquet varius sem sit amet</p>
+						</div>
+					</div>
+				</div>
+				<div class="text-center more_blog" style="width:100%">
+					<a href="{% url 'blog' %}" class="mt-5">Read More Blog</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //blog -->
+
+<!-- our features -->
+<section class="services py-5">
+	<div class="container py-md-3">
+		<h3 class="heading mb-lg-5 mb-4">Our Features</h3>
+		<div class="row service-grids">
+			<div class="col-lg-5 row service-grid1 w3-agile-grid text-right">
+				<div class="col-sm-10 col-10 agile-info">
+					<h4 class="mb-3">No Assumptions of <span>Prior Knowledge</span></h4>
+					<p class="mb-5">Morbi tempus rhoncus finibus. lorem init Pellentesque tempor, diam ut cursus in sollicitudin, urna imperdiet arcu, id. </p>
+				</div>
+				<div class="col-sm-2 col-2 icon1">
+					<span class="fas fa-book"></span>
+				</div>
+				<div class="col-sm-10 col-10 agile-info">
+					<h4 class="mb-3">Servies tailored to <span>Meet Customer needs</span></h4>
+					<p>Morbi tempus rhoncus finibus. lorem init Pellentesque tempor, diam ut cursus in sollicitudin, urna imperdiet arcu, id. </p>
+				</div>
+				<div class="col-sm-2 col-2 icon2">
+					<span class="fas fa-user"></span>
+				</div>
+			</div>
+			
+			<div class="col-lg-2 my-lg-0 text-center middle my-md-5 my-4 service-grid1 p-0">
+				<span class="fas fa-briefcase"></span>
+			</div>
+			
+			<div class="col-lg-5 row service-grid1 w3-agile-grid">
+				<div class="col-sm-2 col-2 icon3">
+					<span class="fas fa-unlock"></span>
+				</div>
+				<div class="col-sm-10 col-10 agile-info">
+					<h4 class="mb-3">Affordability of <span>Services</span></h4>
+					<p class="mb-5">Morbi tempus rhoncus finibus. lorem init Pellentesque tempor, diam ut cursus in sollicitudin, urna imperdiet arcu, id. </p>
+				</div>
+				<div class="col-sm-2 col-2 icon4">
+					<span class="fab fa-accusoft"></span>
+				</div>
+				<div class="col-sm-10 col-10 agile-info">
+					<h4 class="mb-3">Quality <span>Service Delivery</span></h4>
+					<p>Morbi tempus rhoncus finibus. lorem init Pellentesque tempor, diam ut cursus in sollicitudin, urna imperdiet arcu, id. </p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+<!-- //our features -->
+
+{% endblock content %}
