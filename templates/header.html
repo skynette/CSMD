@@ -1,0 +1,39 @@
+<!-- header -->
+<header>
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="{% url 'index' %}">
+				<span class="fab fa-asymmetrik"></span> CSMD
+			</a>
+			<button class="navbar-toggler ml-md-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto text-center">
+					<li class="nav-item active  mr-lg-3">
+						<a class="nav-link" href="{% url 'index' %}">Home</a>
+					</li>
+					<li class="nav-item  mr-lg-3">
+						<a class="nav-link" href="{% url 'blog' %}">Blog</a>
+					</li>
+					<li class="nav-item  mr-lg-3">
+						<a class="nav-link" href="{% url 'services' %}">Services</a>
+					</li>
+					<li class="nav-item  mr-lg-3">
+						<a class="nav-link" href="{% url 'about' %}">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'contact' %}">contact</a>
+					</li>
+				</ul>
+				<div class="buttons">
+					<a href="tel:+234 803 393 3187"><p><i class="fas mr-1 fa-phone"></i> +234 803 393 3187</p></a>
+				</div>
+				
+			</div>
+		</nav>
+	</div>
+</header>
+<!-- //header -->

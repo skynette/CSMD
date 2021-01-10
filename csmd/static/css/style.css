@@ -54,7 +54,7 @@ header {
 }
 .buttons p i {
     color: #fff;
-    background: #dc3545;
+    background: #1cc5ce;
     padding: 12px;
     font-size: 11px;
     border-radius: 50%;
@@ -82,7 +82,7 @@ a.navbar-brand i.fas {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
 }
 a.navbar-brand span{
-	color: #dc3545;
+	color: #1cc5ce;
 }
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
     color: #fff;
@@ -113,12 +113,12 @@ header h1 a span {
 .navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active ,.dropdown-item:hover{
-    color: #dc3545;
+    color: #1cc5ce;
     background: transparent;
     border-radius: 5px;
 }
 .dropdown-item.active, .dropdown-item:active {
-    color: #dc3545;
+    color: #1cc5ce;
     text-decoration: none;
     background-color: transparent;
 }
@@ -496,7 +496,7 @@ p.sub-para {
 .slider-info a {
     color: #fff;
     font-size: 16px;
-    background: #dc3545;
+    background: #1cc5ce;
     padding: 10px 30px;
     letter-spacing: 2px;
      box-shadow: 4px 4px #aaa;
@@ -579,7 +579,7 @@ h2.heading,h3.heading {
 }
 .service_grids a {
     font-size: 16px;
-    color: #dc3545;
+    color: #1cc5ce;
     letter-spacing: 1px;
     font-weight: 600;
     text-align: right;
@@ -612,7 +612,7 @@ h2.heading,h3.heading {
 .quotes a {
     color: #fff;
     font-size: 16px;
-    background: #dc3545;
+    background: #1cc5ce;
     padding: 10px 30px;
     letter-spacing: 2px;
      display: inline-block;
@@ -639,7 +639,7 @@ h2.heading,h3.heading {
     background: #333;
 }
 .quotes a.start:hover{
-    background: #dc3545;
+    background: #1cc5ce;
 }
 /*-- //quotes --*/
 
@@ -680,7 +680,7 @@ h2.heading,h3.heading {
 /*-- clients--*/
 .clients{
     background: #232323;
-    background: #dc3545;
+    background: #1cc5ce;
     padding: 4em 10em 4em 4em;
 }
 .clients h3,.service-bottom h3,.work h3{
@@ -722,7 +722,7 @@ h2.heading,h3.heading {
 .about-grids a {
     color: #fff;
     font-size: 16px;
-    background: #dc3545;
+    background: #1cc5ce;
     padding: 10px 30px;
     letter-spacing: 2px;
     display: inline-block;
@@ -737,7 +737,7 @@ h2.heading,h3.heading {
     background: #333;
 }
 .about-grids h3 {
-    background: #dc3545;
+    background: #1cc5ce;
     padding: 1.2em;
     color: #fff;
     font-size: 28px;
@@ -755,7 +755,7 @@ h3.grey {
     background: #30c39e;
 }
 h3.green {
-    background: #17a2b8;
+    background: #8153ab;
 }
 
 /*-- //about --*/
@@ -794,7 +794,7 @@ h3.green {
     margin-bottom: 15px;
 }
 .steps-reach span.fab.fa-algolia,.service-bottom span.fab.fa-algolia {
-    color: #17a2b8;
+    color: #8153ab;
 }
 .steps-reach span.fab.fa-asymmetrik,.service-bottom span.fab.fa-asymmetrik {
     color: #30c39e;
@@ -848,17 +848,17 @@ h3.green {
     font-weight: 600;
 }
 .blog-grid1 {
-    border-top: 3px solid #dc3545;
+    border-top: 3px solid #1cc5ce;
      background: #fff;
 }
 .blog-grid2 {
-    border-top: 3px solid #dc3545;
+    border-top: 3px solid #1cc5ce;
      background: #fff;
 }
 .more_blog a {
     color: #fff;
     font-size: 16px;
-    background: #dc3545;
+    background: #1cc5ce;
     padding: 10px 30px;
     letter-spacing: 2px;
     display: inline-block;
@@ -873,7 +873,7 @@ h3.green {
 }
 a.blog {
 	font-size: 16px;
-	color: #dc3545;
+	color: #1cc5ce;
 	background: #fff;
 	letter-spacing: 1px;
 	font-weight: 600;
@@ -941,7 +941,7 @@ address p a{
     letter-spacing: 1px;	
 }
 address p a:hover {
-    color: #dc3545;
+    color: #1cc5ce;
 }
 a.facebook {
     font-size: 14px;
@@ -1012,7 +1012,7 @@ button.btn1 {
     transition: 0.5s all;
     float: right;
     width: 17%;
-     background: #dc3545;
+     background: #1cc5ce;
       position: absolute;
     top: -3%;
     right: -0.5%;
@@ -1058,7 +1058,7 @@ button.btn1:hover {
     color: #333;
 }
 .modal-title span{
-    color: #dc3545;
+    color: #1cc5ce;
 }
 /*-- //modal --*/
 
@@ -1100,7 +1100,7 @@ button.btn1:hover {
 }
 .icon1 span {
     font-size: 30px;
-    color: #17a2b8;
+    color: #8153ab;
 }
 .icon2 span {
     font-size: 30px;
@@ -1116,7 +1116,7 @@ button.btn1:hover {
 }
 .middle span {
     font-size: 40px;
-    background: #dc3545;
+    background: #1cc5ce;
     color: #fff;
     width: 120px;
     height: 120px;
@@ -1153,7 +1153,7 @@ button.btn1:hover {
 
 .blog_info h5 a {
     font-size: 20px;
-    color: #dc3545;
+    color: #085e97;
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
@@ -1174,7 +1174,7 @@ ul.blog_list li {
 }
 
 ul.blog_list li span {
-    color: #dc3545;
+    color: #1cc5ce;
     padding-right: 8px;
 }
 
@@ -1294,7 +1294,7 @@ h5.mt-0 {
 .comment-top input[type="submit"] {
     font-size: 1.1em;
 	font-weight: 600;
-    background: #dc3545;
+    background: #1cc5ce;
     padding: 0.7em 1em;
 	letter-spacing: 3px;
     text-align: center;
@@ -1338,7 +1338,7 @@ h5.mt-0 {
     height: 120px;
 }
 .single-gd form input[type="submit"] {
-    background: #dc3545;
+    background: #1cc5ce;
     padding: .8em 1em;
     color: #fff;
     font-size: 16px;
@@ -1637,7 +1637,7 @@ team-members .team-desc h4 {
 /*-- contact --*/
 .contact-grid1 i {
     font-size: 40px;
-    color: #dc3545;
+    color: #1cc5ce;
 }
 .contact-grid1 h4 {
     font-size: 22px;
@@ -1729,7 +1729,7 @@ team-members .team-desc h4 {
     padding: 3em 5em;
 }
 .contact_full{
-    background: #dc3545;
+    background: #1cc5ce;
 	position: relative;
     margin: 6em 0 4em;
 }
@@ -1740,8 +1740,8 @@ team-members .team-desc h4 {
     outline: none;
     padding: 5px;
     border: 5px solid #d3d3d3;
-    border-top: 5px solid #dc3545;
-    border-bottom: 5px solid #dc3545;
+    border-top: 5px solid #1cc5ce;
+    border-bottom: 5px solid #1cc5ce;
 }
 .map {
     position: absolute;
@@ -1765,7 +1765,7 @@ team-members .team-desc h4 {
 	height: 40px;
 	border: none;
 	text-indent: 100%;
-	background: url(../images/arr.png) no-repeat 0px 0px;
+	background: url(../images/arrr.png) no-repeat 0px 0px;
 }
 #toTopHover {
 	width: 40px;
@@ -1849,7 +1849,7 @@ team-members .team-desc h4 {
 }
 @media screen and (max-width: 991px) {
 	.navbar-toggler {
-		background-color: #dc3545;
+		background-color: #1cc5ce;
 		border: 1px solid transparent;
 		border-radius: 0;
 	}

@@ -6,8 +6,8 @@ from django.contrib.auth.decorators import login_required
 from customer.models import Customer
 
 def register(request):
-    if request.user.is_authenticated:
-        return redirect('/')
+    # if request.user.is_authenticated:
+    #     return redirect('/')
     if request.method == "POST":
         first_name = request.POST['first_name']
         last_name = request.POST['last_name']
@@ -31,12 +31,12 @@ def register(request):
     context = {
 
     }
-    return render(request, 'accounts/register2.html', context)
+    return render(request, 'accounts/register.html', context)
 
 
 def login_view(request):
-    if request.user.is_authenticated:
-        return redirect('/')
+    # if request.user.is_authenticated:
+    #     return redirect('/')
     if request.method == "POST":
         username = request.POST['usernmae']
         password = request.POST['password']

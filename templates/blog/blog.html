@@ -22,15 +22,20 @@
 				<div class="col-lg-6 w3-agile-grid">
 					<div class="row blog-grid1 mr-lg-1">
 						<div class="col-lg-5 col-md-4 col-sm-5 pl-0">
+							{% if post.image %}
+							<img src="{{ post.image.url }}" class="img-fluid" alt="">
+							{% else %}
 							<img src="{% static 'images/t1.jpg' %}" class="img-fluid" alt="">
+							{% endif %}
 						</div>
 						<div class="col-lg-7 col-md-8 agile-info col-sm-7 blog-text">
-							<p class="mt-2">june 15 2018</p>
-							<h4>Capital Management</h4>
-							<p>Cras blandit nibh ut pretium amet in elementum. Duis bibendum convallis nun ca dictum. Quisquen ac ipsum</p>
+							<p class="mt-2">{{ post.date }}</p>
+							<h4>{{ post.title }}</h4>
+							<p>{{ post.snippet }}</p>
 							<a href="{% url 'blog_detail' post.url %}" class="blog">Read More <span class="fas ml-1 fa-angle-double-right"></span> </a>
 						</div>
 					</div>
+					<br>
 				</div>
 				{% endfor %}
 			</div>
