@@ -72,7 +72,7 @@
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="{% url 'blog' %}">Blog Page</a>
-							<a class="dropdown-item" href="{% url 'blog_detail' %}">Single page</a>
+							<a class="dropdown-item" href="{% url 'blog' %}">Single page</a>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="{% url 'about' %}">Stats</a>
 						</div>
@@ -98,9 +98,9 @@
 <footer>
 	<div class="container-fluid p-5">
 		<div class="row footer-gap">
-			<div class="col-lg-5 mb-lg-0 mb-4">
-				<h3 class="text-capitalize mb-3">About Company</h3>
-				<p>{{ about }}</p>
+			<div class="col-lg-8 mb-lg-0 mb-4">
+				{% comment %} <h3 class="text-capitalize mb-3">About Company</h3>
+				<p>{{ about }}</p> {% endcomment %}
 				<div class="row mt-4">
 					<div class="col-md-6">
 						<h3 class="text-capitalize mb-3">Connect With Us</h3>
@@ -122,13 +122,13 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-6 mt-lg-0 mt-sm-0 p-md-0">
-				<h3 class="text-capitalize mb-3">Services</h3>
+			<div class="col-lg-4 col-md-4 mt-lg-0 mt-sm-0 p-md-0">
+				{% comment %} <h3 class="text-capitalize mb-3">Services</h3>
 				<ul>
 				{% for service in services3 %}
 				<li><i class="fas mr-1 fa-chevron-circle-right"></i> {{ service.title }}</li>
 				{% endfor %}
-				</ul>
+				</ul> {% endcomment %}
 				<h3 class="text-capitalize mt-4 mb-3">Newsletter</h3>
 				<p class="mb-3">Subscribe to Our Newsletter to get News, Amazing Offers &amp; More</p>
 				<form action="#" method="post">
@@ -137,7 +137,7 @@
 					<div class="clearfix"> </div>
 				</form>
 			</div>
-			<div class="col-lg-4 col-md-6 mt-lg-0 mt-md-0 mt-4 p-md-0">
+			{% comment %} <div class="col-lg-4 col-md-6 mt-lg-0 mt-md-0 mt-4 p-md-0">
 				<h3 class="text-capitalize mb-3">Latest Posts</h3>
 				<div class="blog-grids row mb-3">
 					<div class="col-md-4 col-sm-3 col-4 pr-sm-3 pr-0 blog-grid-left">
@@ -147,7 +147,7 @@
 					</div>
 					<div class="col-md-8 col-sm-9 col-8 blog-grid-right">
 						<h5>
-							<a href="{% url 'blog_detail' %}">Pellentesque dui, non felis. Maecenas male non felis convallis nunc </a>
+							<a href="{% url 'blog' %}">Pellentesque dui, non felis. Maecenas male non felis convallis nunc </a>
 						</h5>
 						<div class="sub-meta">
 							<span>
@@ -187,7 +187,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> {% endcomment %}
 		</div>
 	</div>
 	<div class="copyright pb-sm-5 pb-4 text-center">
@@ -208,6 +208,6 @@
 	<script defer src="{% static 'js/jquery.flexslider.js' %}"></script>
 	<script type="text/javascript" src="{% static 'js/layout.js' %}"></script>
 	<script type="text/javascript" src="{% static 'js/flex.js' %}"></script>
-
+	<a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 0;"></span>To Top</a>
 </body>
 </html>

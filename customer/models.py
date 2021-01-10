@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 class Customer(models.Model):
 	user = models.OneToOneField(User, on_delete=models.CASCADE, blank=True, null=True)
 	name = models.CharField(max_length=50, blank=True)
+	photo = models.ImageField(upload_to='photos/%Y/%m/%d/', null=True, blank=True)
 
 	def __str__(self):
 		return self.name
